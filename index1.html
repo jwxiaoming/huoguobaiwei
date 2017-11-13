@@ -1,0 +1,237 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>火锅百味答题</title>
+    <script src="js/vue.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid" id="fenlei1">
+        <div id="question1" v-if="result<25">
+            <h2>啤酒题1</h2>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1" checked>
+                    Option1
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios1" id="optionsRadios2" value="option2">
+                    Option2
+                </label>
+            </div>
+        </div>
+        <div id="question2" v-else-if="result<50">
+            <h2>啤酒题2</h2>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios2" id="optionsRadios3" value="option1" checked>
+                    Option1
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios2" id="optionsRadios4" value="option2">
+                    Option2
+                </label>
+            </div>
+        </div> 
+        <div id="question3" v-else-if="result<75">
+            <h2>啤酒题3</h2>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios3" id="optionsRadios5" value="option1" checked>
+                    Option1
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios3" id="optionsRadios6" value="option2">
+                    Option2
+                </label>
+            </div>
+        </div>        
+        <div id="question4" v-else="result<100">
+            <h2>啤酒题4</h2>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios4" id="optionsRadios7" value="option1" checked>
+                    Option1
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios4" id="optionsRadios8" value="option2">
+                    Option2
+                </label>
+            </div>
+        </div>                           
+    </div>
+    <div class="container-fluid" id="fenlei2">
+        <div id="question1" v-if="result<25">
+            <h2>啤酒题5</h2>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios5" id="optionsRadios1" value="option1" checked>
+                    Option1
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios5" id="optionsRadios2" value="option2">
+                    Option2
+                </label>
+            </div>
+        </div>
+        <div id="question2" v-else-if="result<50">
+            <h2>啤酒题6</h2>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios6" id="optionsRadios3" value="option1" checked>
+                    Option1
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios6" id="optionsRadios4" value="option2">
+                    Option2
+                </label>
+            </div>
+        </div> 
+        <div id="question3" v-else-if="result<75">
+            <h2>啤酒题7</h2>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios7" id="optionsRadios5" value="option1" checked>
+                    Option1
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios7" id="optionsRadios6" value="option2">
+                    Option2
+                </label>
+            </div>
+        </div>        
+        <div id="question4" v-else="result<100">
+            <h2>啤酒题8</h2>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios8" id="optionsRadios7" value="option1" checked>
+                    Option1
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios8" id="optionsRadios8" value="option2">
+                    Option2
+                </label>
+            </div>
+        </div>                           
+    </div>
+    <div class="container-fluid" id="fenlei3">
+        <div id="question1" v-if="result<25">
+            <h2>火锅题1</h2>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios9" id="optionsRadios1" value="option1" checked>
+                    Option1
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios9" id="optionsRadios2" value="option2">
+                    Option2
+                </label>
+            </div>
+        </div>
+        <div id="question2" v-else-if="result<50">
+            <h2>火锅题2</h2>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios10" id="optionsRadios3" value="option1" checked>
+                    Option1
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios10" id="optionsRadios4" value="option2">
+                    Option2
+                </label>
+            </div>
+        </div> 
+        <div id="question3" v-else-if="result<75">
+            <h2>火锅题3</h2>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios11" id="optionsRadios5" value="option1" checked>
+                    Option1
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios11" id="optionsRadios6" value="option2">
+                    Option2
+                </label>
+            </div>
+        </div>        
+        <div id="question4" v-else="result<100">
+            <h2>火锅题4</h2>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios12" id="optionsRadios7" value="option1" checked>
+                    Option1
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios12" id="optionsRadios8" value="option2">
+                    Option2
+                </label>
+            </div>
+        </div>                           
+    </div>
+    <script>
+        var fenlei1 = new Vue({
+            el:'#fenlei1',
+            data:{
+                result:-1,
+            },
+            methods:{
+            },
+            mounted(){
+                this.result = Math.round(Math.random()*100)
+            }
+        });
+        var fenlei2 = new Vue({
+            el:'#fenlei2',
+            data:{
+                result:-1,
+            },
+            methods:{
+
+            },
+            mounted(){
+                this.result = Math.round(Math.random()*100)
+            }
+        });
+        var fenlei3 = new Vue({
+            el:'#fenlei3',
+            data:{
+                result:-1,
+            },
+            methods:{
+
+            },
+            mounted(){
+                this.result = Math.round(Math.random()*100)
+            }
+        });
+    </script>
+</body>
+</html>
